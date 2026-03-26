@@ -17,8 +17,25 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 ---
 
 ## 💻 Program
-Add code here
+```
+import pandas as pd
+import numpy as np
 
+exam_data = {
+    'name': ['Ankit', 'Riya', 'Karan', 'Meena', 'John'],
+    'score': [85, 90, 78, 92, 88],
+    'attempts': [1, 2, 1, 3, 2],
+    'qualify': ['Yes', 'Yes', 'No', 'Yes', 'Yes']
+}
+
+labels = ['a', 'b', 'c', 'd', 'e']
+
+df = pd.DataFrame(exam_data, index=labels)
+
+print(df)
+```
 ## Output
+<img width="544" height="426" alt="image" src="https://github.com/user-attachments/assets/ac87794c-3fc0-4656-8c11-a3cd7f0f23e4" />
 
 ## Result
+Thus, the Python program to create and display a Pandas DataFrame with custom index labels was successfully executed.
